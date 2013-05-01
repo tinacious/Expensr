@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Expensr</title>
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid #ddd;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Expensr</h1>
+	<p>
+		Lorem ipsum Sed anim est minim ullamco culpa incididunt ut aute sint veniam aute aute dolore pariatur cillum ad nisi culpa culpa.
+	</p>
+
+	<h2>Expense Input</h2>
+	<form action="">
+		<!-- item -->
+		<label for="item">Item</label>
+		<input type="text" name="item" id="item" />
+
+		<br/>
+
+		<!-- who paid -->
+		<label for="who_paid">Who Paid</label>
+		<input type="text" name="who_paid" id="who_paid" />
+
+		<br/>
+
+		<!-- who partook -->
+		<label for="who_partook">Item</label>
+		<input type="text" name="who_partook" id="who_partook" />
+
+		<br/>
+
+		<input type="submit" value="Add Expense"/>
+	</form>
+
+
+	<h2>Costs</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Item</th>	
+				<th>Who Paid</th>
+				<th>Who Partook</th>
+				<th>Cost</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- each item added will fill out a table row -->
+			<tr>
+				<td>item example</td>
+				<td>person who paid</td>
+				<td>people who partook (CSV or space, whatever is easiest for you)</td>
+				<td>amount $</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>Expense Report</h2>
+	<ul>
+		<li>
+			Tina owes Katie $300.00.
+		</li>
+		<li>
+			Jodie owes Katie $50.75.
+		</li>
+		<li>
+			Laura owes Katie $20.45.
+		</li>
+	</ul>
+
+</body>
+</html>
