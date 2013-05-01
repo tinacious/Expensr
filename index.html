@@ -3,79 +3,76 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Expensr</title>
-	<style type="text/css">
-		table {
-			border-collapse: collapse;
-		}
-		th, td {
-			border: 1px solid #ddd;
-			padding: 5px;
-		}
-	</style>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Expensr</h1>
-	<p>
-		Lorem ipsum Sed anim est minim ullamco culpa incididunt ut aute sint veniam aute aute dolore pariatur cillum ad nisi culpa culpa.
-	</p>
+	<div class="container">
+		<h1>Expensr</h1>
+		<div class="welcome">
+			<p>
+				Lorem ipsum Sed anim est minim ullamco culpa incididunt ut aute sint veniam aute aute dolore pariatur cillum ad nisi culpa culpa.
+			</p>
+		</div>
 
-	<h2>Expense Input</h2>
-	<form action="">
-		<!-- item -->
-		<label for="item">Item</label>
-		<input type="text" name="item" id="item" />
+		<h2>Expense Input</h2>
+		<form action="">
+			<!-- item -->
+			<label for="item">Item</label>
+			<input type="text" name="item" id="item" />
 
-		<br/>
+			<br/>
 
-		<!-- who paid -->
-		<label for="who_paid">Who Paid</label>
-		<input type="text" name="who_paid" id="who_paid" />
+			<!-- who paid -->
+			<label for="who_paid">Who Paid</label>
+			<input type="text" name="who_paid" id="who_paid" />
 
-		<br/>
+			<br/>
 
-		<!-- who partook -->
-		<label for="who_partook">Item</label>
-		<input type="text" name="who_partook" id="who_partook" />
+			<!-- who partook -->
+			<label for="who_partook">Item</label>
+			<input type="text" name="who_partook" id="who_partook" />
 
-		<br/>
+			<br/>
 
-		<input type="submit" value="Add Expense"/>
-	</form>
+			<input type="submit" value="Add Expense"/>
+		</form>
 
 
-	<h2>Costs</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Item</th>	
-				<th>Who Paid</th>
-				<th>Who Partook</th>
-				<th>Cost</th>
-			</tr>
-		</thead>
-		<tbody>
-			<!-- each item added will fill out a table row -->
-			<tr>
-				<td>item example</td>
-				<td>person who paid</td>
-				<td>people who partook (CSV or space, whatever is easiest for you)</td>
-				<td>amount $</td>
-			</tr>
-		</tbody>
-	</table>
+		<h2>Costs</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>	
+					<th>Who Paid</th>
+					<th>Who Partook</th>
+					<th>Cost</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- each item added will fill out a table row -->
+				<tr>
+					<td>item example</td>
+					<td>person who paid</td>
+					<td>people who partook (CSV or space, whatever is easiest for you)</td>
+					<td>amount $</td>
+				</tr>
+			</tbody>
+		</table>
 
-	<h2>Expense Report</h2>
-	<ul>
-		<li>
-			Tina owes Katie $300.00.
-		</li>
-		<li>
-			Jodie owes Katie $50.75.
-		</li>
-		<li>
-			Laura owes Katie $20.45.
-		</li>
-	</ul>
+		<h2>Expense Report</h2>
+		<ul>
+			<li>
+				Tina owes Katie $300.00.
+			</li>
+			<li>
+				Jodie owes Katie $50.75.
+			</li>
+			<li>
+				Laura owes Katie $20.45.
+			</li>
+		</ul>
+	</div>
 
 </body>
 </html>
