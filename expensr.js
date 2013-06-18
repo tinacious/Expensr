@@ -35,12 +35,12 @@
     MyApp.displayExpenses = function () {
         $("table#expenses tbody").remove();
         for (var i = 0; i < MyApp.expenses.length ; i++) {
-            var expenseMarkup = "<tr> <th>"
-                + MyApp.expenses[i].itemName + "</th><th>"
-                + MyApp.expenses[i].whoPaid + "</th><th>"
-                + MyApp.expenses[i].participants + "</th><th>"
-                + MyApp.expenses[i].cost + "</th><th>"
-            + '<form id="blah" action="#" method="post"><input type="button" value="-" onclick="MyApp.removeExpense(' + i + ')"/></form>' + '</th></tr>';
+            var expenseMarkup = "<tr> <td>"
+                + MyApp.expenses[i].itemName + "</td><td>"
+                + MyApp.expenses[i].whoPaid + "</td><td>"
+                + MyApp.expenses[i].participants + "</td><td>"
+                + MyApp.expenses[i].cost + "</td><td>"
+            + '<form id="blah" action="#" metdod="post"><input type="button" value="-" onclick="MyApp.removeExpense(' + i + ')"/></form>' + '</td></tr>';
             $("table#expenses").append("<tbody>" + expenseMarkup + "<tbody>");
         }
     }
