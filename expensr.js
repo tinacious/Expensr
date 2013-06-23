@@ -41,7 +41,7 @@
                 + MyApp.expenses[i].whoPaid + "</td><td>"
                 + MyApp.expenses[i].participants + "</td><td>"
                 + MyApp.expenses[i].cost + "</td><td>"
-            + '<form id="blah" action="#" metdod="post"><input type="button" value="-" onclick="MyApp.removeExpense(' + i + ')"/></form>' + '</td></tr>';
+            + '<a class="close-icon lsf-icon" title="remove" href="#" onclick="MyApp.removeExpense(' + i + ')">Remove</a>' + '</td></tr>';
             $("table#expenses").append("<tbody>" + expenseMarkup + "<tbody>");
         }
     }
