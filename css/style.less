@@ -6,23 +6,31 @@
 
 @import 'normalize.css';
 
+@mobile: ~"all and (max-width: 500px)";
+
+.box-sizing() {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
 html, input {
 	-webkit-font-smoothing: antialiased;
 }
-
 html {
 	background: #efefef;
 }
 body {
 	font-family: "museo-slab", consolas, monaco, 'courier new', sans-serif;
 	font-size: 1.1em;
+	
 }
 h1, h2, h3, h4 {
 	font-weight: 100;
 }
 
 .container {
-	max-width: 600px;
+	max-width: 500px;
 	padding: 20px;
 	margin: 20px auto;
 	background: #fff;
@@ -34,10 +42,43 @@ h1, h2, h3, h4 {
 }
 
 // Form
+:focus {
+	outline: 0;
+	box-shadow: 0 0 10px fade(dodgerblue,40%);
+}
+label {
+	font-weight: 700;
+	padding: 0.7em 0;
+	display: inline-block;
+	width: 180px;
+}
+input {
+	border: 1px solid #ccc;
+	padding: 0.2em;
+	width: 310px;
+	.box-sizing();
+	@media @mobile {
+		width: 100%;
+	}
+	&[type=button] {
+		width: 100%;
+		padding: 0.5em;
+		margin-top: 0.5em;
+		background: dodgerblue;
+		font-weight: 700;
+		color: #fff;
+		border: 0;
+		border-radius: 6px;
+		&:hover {
+			background: darkturquoise;
+		}
+	}
+}
 
 // Cost Table
 table {
 	border-collapse: collapse;
+	width: 100%;
 }
 th, td {
 	border: 1px solid #ddd;

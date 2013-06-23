@@ -26,6 +26,7 @@
         MyApp.expenses.push(singleExpenseTemp);
         MyApp.calculateDebts();
         MyApp.displayExpenses();
+        $('input[type=text]').val('');
     }
     MyApp.removeExpense = function (index) {
         MyApp.expenses.splice(index, 1);

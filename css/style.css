@@ -22,13 +22,50 @@ h4 {
   font-weight: 100;
 }
 .container {
-  max-width: 600px;
+  max-width: 500px;
   padding: 20px;
   margin: 20px auto;
   background: #fff;
 }
+:focus {
+  outline: 0;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.4);
+}
+label {
+  font-weight: 700;
+  padding: 0.7em 0;
+  display: inline-block;
+  width: 180px;
+}
+input {
+  border: 1px solid #ccc;
+  padding: 0.2em;
+  width: 310px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+@media all and (max-width: 500px) {
+  input {
+    width: 100%;
+  }
+}
+input[type=button] {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  background: dodgerblue;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+}
+input[type=button]:hover {
+  background: darkturquoise;
+}
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 th,
 td {
