@@ -6,6 +6,39 @@
 
 @import 'normalize.css';
 
+// ligature symbol font
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('LigatureSymbols-2.09.eot');
+    src: url('LigatureSymbols-2.09.eot?#iefix') format('embedded-opentype'),
+         url('LigatureSymbols-2.09.woff') format('woff'),
+         url('LigatureSymbols-2.09.ttf') format('truetype'),
+         url('LigatureSymbols-2.09.svg#LigatureSymbols') format('svg');
+    src: url('LigatureSymbols-2.09.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  font-style: normal;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.lsf-icon:before {
+  content:attr(title);
+  margin-right:0.3em;
+  font-size:130%;
+}
+
+// mixins and variables
 @mobile: ~"all and (max-width: 500px)";
 
 .box-sizing() {
@@ -14,14 +47,15 @@
 	-webkit-box-sizing: border-box;
 }
 
+// styles
 html, input {
 	-webkit-font-smoothing: antialiased;
 }
 html {
-	background: #efefef;
+	background: lighten(palegreen,10%);
 }
 body {
-	font-family: "museo-slab", consolas, monaco, 'courier new', sans-serif;
+	font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
 	font-size: 1.1em;
 	
 }
@@ -34,6 +68,9 @@ h1, h2, h3, h4 {
 	padding: 20px;
 	margin: 20px auto;
 	background: #fff;
+	@media @mobile {
+		margin: 0 auto;
+	}
 }
 
 // Welcome
@@ -69,10 +106,16 @@ input {
 		color: #fff;
 		border: 0;
 		border-radius: 6px;
+		@media @mobile {
+			margin-top: 1em;
+		}
 		&:hover {
 			background: darkturquoise;
 		}
 	}
+}
+a {
+	text-decoration: none;
 }
 
 // Cost Table
@@ -84,5 +127,17 @@ th, td {
 	border: 1px solid #ddd;
 	padding: 5px;
 }
+th {
+	background: #f7f7f7;
+}
+.close-icon {
+	color: crimson;
+	font-weight: 700;
+	font-size: 0.8em;
+	&:before {
+		font-weight: 400;
+	}
+}
+
 
 // Expense Report
