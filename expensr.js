@@ -19,6 +19,11 @@
         var itm = $("form#newexpense input#item").val().toLowerCase();
         var wpd = $("form#newexpense input#who_paid").val().toLowerCase();
         var ptcpnts = $("form#newexpense input#participants").val().toLowerCase().split(",");
+        //remove empty spaces at the beginning and end of each name
+        for( var i =0;i<ptcpnts.length;i++){
+            var str = ptcpnts[i].replace(/(^\s+|\s+$)/g,' ');
+            ptcpnts[i]=str;
+        }
         var ct = parseFloat($("form#newexpense input#cost").val());
         var pisptc = searchStringInArray(wpd, ptcpnts);
 
@@ -127,9 +132,9 @@
         $('table#payments tbody').remove();
         $('table#payments').append('<tbody></tbody>');
         for (var i = 0; i < n; i++) {
-            var sum = 0
+            var sum = 0;
             for (var j = 0; j < n; j++) {
-                if (i != j) {
+                if (i !== j) {
                     var amt = MyApp.people[personmap[i]][personmap[j]] || 0;
                     sum = sum + amt;
                 }
@@ -145,7 +150,7 @@
             var amount = arraymin([Math.abs(distances[imin]), Math.abs(distances[imax])]);
             distances[imin] = distances[imin] + amount;
             distances[imax] = distances[imax] - amount;
-            if (amount != 0) {
+            if ((amount != 0) && (personmap[imin]!=personmap[imax])) {
                 $('table#payments').append("<tr><th>" + personmap[imin] + "</th><th>" + personmap[imax] + '</th><th>' + amount.toFixed(2) + '</th></tr>');
             }
         }
