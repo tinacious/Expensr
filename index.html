@@ -1,70 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="camping-theme">
 <head>
 	<meta charset="UTF-8">
 	<title>Expensr</title>
-    <script type="text/javascript" src="//use.typekit.net/zej5vpz.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" type="html/css" href="css/style.css" />
+	<script type="text/javascript" src="//use.typekit.net/zej5vpz.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" type="html/css" href="css/style.css" />
 </head>
 
 <body>
 	<div class="container">
-        <h1>Expensr</h1>
-        <p>
-            Lorem ipsum Sed anim est minim ullamco culpa incididunt ut aute sint veniam aute aute dolore pariatur cillum ad nisi culpa culpa.
-        </p>
+		<h1>Expensr</h1>
+		<p>
+			Lorem ipsum Sed anim est minim ullamco culpa incididunt ut aute sint veniam aute aute dolore pariatur cillum ad nisi culpa culpa.
+		</p>
 
-        <h2>Expense Input</h2>
-        <form id="newexpense" action="#" method="post">
-            <!-- item -->
-            <label for="item">Item</label>
-            <input type="text" name="item" id="item" />
-            <br />
-            <!-- who paid -->
-            <label for="who_paid">Who Paid</label>
-            <input type="text" name="who_paid" id="who_paid" />
-            <br />
-            
-            <!-- who partook -->
-            <label for="participants">Participants</label>
-            <input type="text" name="participants" id="participants" />
-            <br />
+		<h2>Expense Input</h2>
+		<form id="newexpense" action="#" method="post">
+			<!-- item -->
+			<label for="item">Item</label>
+			<input type="text" name="item" id="item" />
+			<br />
+			<!-- who paid -->
+			<label for="who_paid">Who Paid</label>
+			<input type="text" name="who_paid" id="who_paid" />
+			<br />
+			
+			<!-- who partook -->
+			<label for="participants">Participants</label>
+			<input type="text" name="participants" id="participants" />
+			<br />
 
-            <label for="cost">Cost</label>
-            <input type="text" name="cost" id="cost" />
-            <br />
+			<label for="cost">Cost</label>
+			<input type="text" name="cost" id="cost" />
+			<br />
 
-            <input type="button" value="Submit" onclick="MyApp.addExpense()"/>
-        </form>
-         <h2>Expense Summary</h2>
-         <table id="expenses">
-             <thead>
-                 <tr>
-                     <th>Item</th>
-                     <th>Who Paid</th>
-                     <th>Participants</th>
-                     <th>Cost</th>
-                     <th><i class="lsf-icon" title="remove"></i></th>
-                 </tr>
-             </thead>
-             <tbody></tbody>
-         </table>
+			<input type="button" value="Submit" onclick="MyApp.addExpense()"/>
+		</form>
+		
+		 <h2>Expense Summary</h2>
+		 <table id="expenses">
+			 <thead>
+				 <tr>
+					 <th>Item</th>
+					 <th>Who Paid</th>
+					 <th>Participants</th>
+					 <th>Cost</th>
+					 <th><i class="lsf-icon" title="remove"></i></th>
+				 </tr>
+			 </thead>
+			 <tbody></tbody>
+		 </table>
 
-         <h2>Amounts Owed</h2>
-         <table id="payments">
-         <thead>
-             <tr>
-                 <th>Payment From</th>
-                 <th>Payment To</th>
-                 <th>Amount</th>
-             </tr>
-         </thead>
-         <tbody></tbody>
-         </table>   
-    </div>
-    
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="expensr.js"></script>
+		 <h2>Amounts Owed</h2>
+		 <table id="payments">
+		 <thead>
+			 <tr>
+				 <th>Payment From</th>
+				 <th>Payment To</th>
+				 <th>Amount</th>
+			 </tr>
+		 </thead>
+		 <tbody></tbody>
+		 </table>   
+	</div>
+
+	<div class="illustrations">
+		<img src="img/tent.png" class="tent" alt="Tent">
+		<img src="img/fireplace-camper.png" class="camper" alt="Camper at the fireplace roasting marshmallows.">
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="expensr.js"></script>
 </body>
 </html>

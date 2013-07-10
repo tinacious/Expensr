@@ -51,9 +51,7 @@
 html, input {
 	-webkit-font-smoothing: antialiased;
 }
-html {
-	background: lighten(palegreen,10%);
-}
+
 body {
 	font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
 	font-size: 1.1em;
@@ -67,7 +65,7 @@ h1, h2, h3, h4 {
 	max-width: 500px;
 	padding: 20px;
 	margin: 20px auto;
-	background: #fff;
+	// background: #fff;
 	@media @mobile {
 		margin: 0 auto;
 	}
@@ -141,3 +139,28 @@ th {
 
 
 // Expense Report
+
+
+// Camping theme 
+.camping-theme {
+	background-image: url(../img/sky.png);
+	background-size: 50%;
+	.illustrations {
+		height: 670px;
+		width: 100%;
+		background-image: url(../img/trees-700.png), url(../img/ground.png);
+		background-position: center top, center bottom;
+		background-repeat: repeat-x;
+		position: relative;
+	}
+	.tent {
+		position: absolute;
+		top: 25%;
+		right: 7%;
+	}
+	.camper {
+		position: absolute;
+		top: 35%;
+		left: 30%;
+	}
+}

@@ -36,9 +36,6 @@ html,
 input {
   -webkit-font-smoothing: antialiased;
 }
-html {
-  background: #c9fdc9;
-}
 body {
   font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
   font-size: 1.1em;
@@ -53,7 +50,6 @@ h4 {
   max-width: 500px;
   padding: 20px;
   margin: 20px auto;
-  background: #fff;
 }
 @media all and (max-width: 500px) {
   .container {
@@ -123,4 +119,26 @@ th {
 }
 .close-icon:before {
   font-weight: 400;
+}
+.camping-theme {
+  background-image: url(../img/sky.png);
+  background-size: 50%;
+}
+.camping-theme .illustrations {
+  height: 670px;
+  width: 100%;
+  background-image: url(../img/trees-700.png), url(../img/ground.png);
+  background-position: center top, center bottom;
+  background-repeat: repeat-x;
+  position: relative;
+}
+.camping-theme .tent {
+  position: absolute;
+  top: 25%;
+  right: 7%;
+}
+.camping-theme .camper {
+  position: absolute;
+  top: 35%;
+  left: 30%;
 }
