@@ -39,22 +39,28 @@ input {
 body {
   font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
   font-size: 1.1em;
+  color: #fff;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-weight: 100;
+  text-align: center;
 }
 .container {
   max-width: 500px;
   padding: 20px;
   margin: 20px auto;
+  background: rgba(0, 0, 0, 0.2);
 }
 @media all and (max-width: 500px) {
   .container {
     margin: 0 auto;
   }
+}
+.welcome {
+  font-size: 1.2em;
+  text-align: center;
 }
 :focus {
   outline: 0;
@@ -103,6 +109,7 @@ a {
 table {
   border-collapse: collapse;
   width: 100%;
+  color: #000;
 }
 th,
 td {
@@ -119,6 +126,12 @@ th {
 }
 .close-icon:before {
   font-weight: 400;
+  padding-left: 5px;
+}
+@media all and (max-width: 500px) {
+  .close-icon {
+    width: 0px;
+  }
 }
 .camping-theme {
   background-image: url(../img/sky.png);
@@ -131,14 +144,33 @@ th {
   background-position: center top, center bottom;
   background-repeat: repeat-x;
   position: relative;
+  overflow: hidden;
 }
 .camping-theme .tent {
   position: absolute;
   top: 25%;
   right: 7%;
 }
-.camping-theme .camper {
+.camping-theme .camper-fireplace {
   position: absolute;
   top: 35%;
   left: 30%;
+}
+.camping-theme .camper-wood {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+@media all and (max-width: 500px) {
+  .camping-theme .tent {
+    right: -28%;
+  }
+  .camping-theme .camper-fireplace {
+    top: 50%;
+    left: 0;
+  }
+  .camping-theme .camper-wood {
+    top: 15%;
+    left: 6%;
+  }
 }

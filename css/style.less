@@ -55,17 +55,18 @@ html, input {
 body {
 	font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
 	font-size: 1.1em;
-	
+	color: #fff;
 }
 h1, h2, h3, h4 {
-	font-weight: 100;
+	// font-weight: 100;
+	text-align: center;
 }
 
 .container {
 	max-width: 500px;
 	padding: 20px;
 	margin: 20px auto;
-	// background: #fff;
+	background: fade(#000,20%);
 	@media @mobile {
 		margin: 0 auto;
 	}
@@ -73,7 +74,8 @@ h1, h2, h3, h4 {
 
 // Welcome
 .welcome {
-	//
+	font-size: 1.2em;
+	text-align: center;
 }
 
 // Form
@@ -120,6 +122,7 @@ a {
 table {
 	border-collapse: collapse;
 	width: 100%;
+	color: #000;
 }
 th, td {
 	border: 1px solid #ddd;
@@ -134,6 +137,11 @@ th {
 	font-size: 0.8em;
 	&:before {
 		font-weight: 400;
+		padding-left: 5px;
+	}
+	@media @mobile {
+		width: 0px;
+
 	}
 }
 
@@ -152,15 +160,34 @@ th {
 		background-position: center top, center bottom;
 		background-repeat: repeat-x;
 		position: relative;
+		overflow: hidden;
 	}
 	.tent {
 		position: absolute;
 		top: 25%;
 		right: 7%;
 	}
-	.camper {
+	.camper-fireplace {
 		position: absolute;
 		top: 35%;
 		left: 30%;
+	}
+	.camper-wood {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+	}
+	@media @mobile {
+		.tent {
+			right: -28%;
+		}
+		.camper-fireplace {
+			top: 50%;
+			left: 0;
+		}
+		.camper-wood {
+			top: 15%;
+			left: 6%;
+		}
 	}
 }
