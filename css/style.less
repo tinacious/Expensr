@@ -53,20 +53,24 @@ html, input {
 }
 
 body {
-	font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
+	font-family: "omnes-pro", 'helvetica neue', arial, sans-serif;
 	font-size: 1.1em;
-	color: #fff;
+	// color: #fff;
 }
 h1, h2, h3, h4 {
-	// font-weight: 100;
+	font-weight: 500;
 	text-align: center;
+	margin: 0.4em 0 0.2em 0;
 }
+
+
 
 .container {
 	max-width: 500px;
 	padding: 20px;
 	margin: 20px auto;
-	background: fade(#000,20%);
+	// background: fade(#000,20%);
+	background: fade(#fff,90%);
 	@media @mobile {
 		margin: 0 auto;
 	}
@@ -76,6 +80,9 @@ h1, h2, h3, h4 {
 .welcome {
 	font-size: 1.2em;
 	text-align: center;
+	p {
+		margin-top: 0.2em;
+	}
 }
 
 // Form
@@ -84,7 +91,7 @@ h1, h2, h3, h4 {
 	box-shadow: 0 0 10px fade(dodgerblue,40%);
 }
 label {
-	font-weight: 700;
+	font-weight: 500;
 	padding: 0.7em 0;
 	display: inline-block;
 	width: 180px;
@@ -102,7 +109,7 @@ input {
 		padding: 0.5em;
 		margin-top: 0.5em;
 		background: dodgerblue;
-		font-weight: 700;
+		font-weight: 500;
 		color: #fff;
 		border: 0;
 		border-radius: 6px;
@@ -130,18 +137,23 @@ th, td {
 }
 th {
 	background: #f7f7f7;
+	font-weight: 500;
 }
+// td {
+// 	color: #fff;
+// }
 .close-icon {
 	color: crimson;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 0.8em;
 	&:before {
 		font-weight: 400;
 		padding-left: 5px;
 	}
 	@media @mobile {
-		width: 0px;
-
+		width: 20px;
+		overflow: hidden;
+		display: block;
 	}
 }
 
@@ -178,15 +190,21 @@ th {
 		left: 20%;
 	}
 	@media @mobile {
+		.illustrations {
+			height: 600px;
+		}
 		.tent {
-			right: -28%;
+			width: 280px;
+			right: -30%;
 		}
 		.camper-fireplace {
+			width: 300px;
 			top: 50%;
-			left: 0;
+			left: 10%;
 		}
 		.camper-wood {
-			top: 15%;
+			width: 90px;
+			top: 20%;
 			left: 6%;
 		}
 	}

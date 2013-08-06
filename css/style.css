@@ -37,21 +37,22 @@ input {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: "museo-slab", 'helvetica neue', arial, sans-serif;
+  font-family: "omnes-pro", 'helvetica neue', arial, sans-serif;
   font-size: 1.1em;
-  color: #fff;
 }
 h1,
 h2,
 h3,
 h4 {
+  font-weight: 500;
   text-align: center;
+  margin: 0.4em 0 0.2em 0;
 }
 .container {
   max-width: 500px;
   padding: 20px;
   margin: 20px auto;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
 }
 @media all and (max-width: 500px) {
   .container {
@@ -62,12 +63,15 @@ h4 {
   font-size: 1.2em;
   text-align: center;
 }
+.welcome p {
+  margin-top: 0.2em;
+}
 :focus {
   outline: 0;
   box-shadow: 0 0 10px rgba(30, 144, 255, 0.4);
 }
 label {
-  font-weight: 700;
+  font-weight: 500;
   padding: 0.7em 0;
   display: inline-block;
   width: 180px;
@@ -90,7 +94,7 @@ input[type=button] {
   padding: 0.5em;
   margin-top: 0.5em;
   background: dodgerblue;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   border: 0;
   border-radius: 6px;
@@ -118,10 +122,11 @@ td {
 }
 th {
   background: #f7f7f7;
+  font-weight: 500;
 }
 .close-icon {
   color: crimson;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.8em;
 }
 .close-icon:before {
@@ -130,7 +135,9 @@ th {
 }
 @media all and (max-width: 500px) {
   .close-icon {
-    width: 0px;
+    width: 20px;
+    overflow: hidden;
+    display: block;
   }
 }
 .camping-theme {
@@ -162,15 +169,21 @@ th {
   left: 20%;
 }
 @media all and (max-width: 500px) {
+  .camping-theme .illustrations {
+    height: 600px;
+  }
   .camping-theme .tent {
-    right: -28%;
+    width: 280px;
+    right: -30%;
   }
   .camping-theme .camper-fireplace {
+    width: 300px;
     top: 50%;
-    left: 0;
+    left: 10%;
   }
   .camping-theme .camper-wood {
-    top: 15%;
+    width: 90px;
+    top: 20%;
     left: 6%;
   }
 }
