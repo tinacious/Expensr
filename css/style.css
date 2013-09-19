@@ -4,6 +4,39 @@
   TinaciousDesign.com
   Ordeau.com
 **********************/
+.stacktable {
+  width: 100%;
+}
+.st-head-row {
+  padding-top: 1em;
+}
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+.st-key {
+  width: 49%;
+  text-align: right;
+  padding-right: 1%;
+}
+.st-val {
+  width: 49%;
+  padding-left: 1%;
+}
+.stacktable.large-only {
+  display: table;
+}
+.small-only {
+  display: none;
+}
+@media (max-width: 500px) {
+  .large-only {
+    display: none;
+  }
+  .stacktable.small-only {
+    display: table;
+  }
+}
 @font-face {
   font-family: 'LigatureSymbols';
   src: url('LigatureSymbols-2.09.eot');
@@ -134,11 +167,46 @@ th {
   padding-left: 5px;
 }
 @media all and (max-width: 500px) {
-  .close-icon {
-    width: 20px;
-    overflow: hidden;
-    display: block;
+  .responsive-table {
+    display: none;
   }
+}
+.st-head-row.st-head-row-main {
+  display: none;
+}
+.st-head-row {
+  padding-top: 0;
+  border-top: 10px solid #ebebeb;
+}
+.st-key,
+.st-val {
+  padding: 5px 10px;
+}
+.st-key {
+  font-weight: 700;
+  width: 23%;
+}
+.st-key .lsf-icon {
+  display: none;
+}
+.st-key .lsf-icon:before {
+  display: none;
+}
+.st-val {
+  width: 65%;
+}
+.stacktable {
+  margin-top: 15px;
+}
+.stacktable th,
+.stacktable td {
+  border: 0;
+}
+.stacktable th {
+  border-top: 10px solid #fff;
+}
+.stacktable .close-icon {
+  padding-bottom: 20px;
 }
 .camping-theme {
   background-image: url(../img/sky.png);

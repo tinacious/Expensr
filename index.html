@@ -35,14 +35,14 @@
 			<br />
 
 			<label for="cost">Cost</label>
-			<input type="text" name="cost" id="cost" />
+			<input type="text" pattern="[0-9]*" name="cost" id="cost" />
 			<br />
 
 			<input type="button" value="Submit" onclick="MyApp.addExpense()"/>
 		</form>
 		
 		 <h2>Expense Summary</h2>
-		 <table id="expenses">
+		 <table id="expenses" class="responsive-table">
 			 <thead>
 				 <tr>
 					 <th>Item</th>
@@ -76,6 +76,6 @@
 	
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
-	<script type="text/javascript" src="expensr.js"></script>
+	<script type="text/javascript" src="js/expensr.js"></script>
 </body>
 </html>

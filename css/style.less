@@ -6,6 +6,9 @@
 
 @import 'normalize.css';
 
+// Stacktable
+@import 'stacktable';
+
 // ligature symbol font
 @font-face {
     font-family: 'LigatureSymbols';
@@ -150,10 +153,52 @@ th {
 		font-weight: 400;
 		padding-left: 5px;
 	}
+	// @media @mobile {
+	// 	width: 20px;
+	// 	overflow: hidden;
+	// 	display: block;
+	// }
+}
+
+.responsive-table {
 	@media @mobile {
-		width: 20px;
-		overflow: hidden;
-		display: block;
+		display: none;
+	}
+}
+
+.st-head-row.st-head-row-main {
+	display: none;
+}
+.st-head-row {
+	padding-top: 0;
+	border-top: 10px solid #ebebeb;
+}
+.st-key, .st-val {
+	padding: 5px 10px;
+}
+.st-key {
+	font-weight: 700;
+	width: 23%;
+	.lsf-icon {
+		display: none;
+		&:before {
+			display: none;
+		}
+	}
+}
+.st-val {
+	width: 65%;
+}
+.stacktable {
+	margin-top: 15px;
+	th, td {
+		border: 0;
+	}
+	th {
+		border-top: 10px solid #fff;
+	}
+	.close-icon {
+		padding-bottom: 20px;
 	}
 }
 
