@@ -176,7 +176,6 @@ th {
 }
 .st-head-row {
   padding-top: 0;
-  border-top: 10px solid #ebebeb;
 }
 .st-key,
 .st-val {
@@ -195,15 +194,12 @@ th {
 .st-val {
   width: 65%;
 }
-.stacktable {
-  margin-top: 15px;
-}
 .stacktable th,
 .stacktable td {
   border: 0;
 }
 .stacktable th {
-  border-top: 10px solid #fff;
+  border-top: 20px solid #ebebeb;
 }
 .stacktable .close-icon {
   padding-bottom: 20px;
