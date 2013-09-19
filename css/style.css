@@ -85,7 +85,7 @@ h4 {
   max-width: 500px;
   padding: 20px;
   margin: 20px auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: #ebebeb;
 }
 @media all and (max-width: 500px) {
   .container {
