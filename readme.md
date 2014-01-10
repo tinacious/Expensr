@@ -6,4 +6,6 @@ Design and front-end development by [TinaciousDesign.com](http://tinaciousdesign
 
 App Development by [Ordeau.com](http://ordeau.com)
 
-![screenshot](screenshot.png)
+Illustrations by [Alexander Barattin](http://alexanderbarattin.com).
+
+Check it out [here](http://tinacious.github.io/Expensr/).
