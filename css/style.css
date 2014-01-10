@@ -232,6 +232,14 @@ th {
   top: 20%;
   left: 20%;
 }
+.camping-theme .credits {
+  text-align: center;
+  color: #fff;
+  padding: 0 10px;
+}
+.camping-theme .credits a {
+  color: dodgerblue;
+}
 @media all and (max-width: 500px) {
   .camping-theme .illustrations {
     height: 600px;
